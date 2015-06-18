@@ -3,24 +3,30 @@
 <head>  
   <meta charset="utf-8">  
   <title>Test for Carousel</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
  
           
 </head> 
 <body onload="autoRotate()"> 
+<!--Header-->
     <header class="headerPosition" >
-      <h1 class="logoPosition"> Im a pretend logo</h1>
+      <a class="logo" href="index.html"> Chicago Code Logo</a>
       <nav class="navLineUp">
-        <ul>
-          <li>HOME </li>
-          <li>PAGE1  </li>
-          <li>PAGE2  </li>
-          <li>PAGE3 </li>
-          <li>PAGE4  </li>
+        <ul class="nav-style">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">Sites</a> </li>
+          <li><a href="#">Code</a>  </li>
+          <li><a href="#">Stuff</a> </li>
+          <li><a href="#">Examples</a>  </li>
 
         </ul>
       </nav>
+    </header>
+<!--Main-->    
+    <main>
       <section>
+        <button name="backArrow" class="buttonStyle arrowLeftPosition" onclick="moveImgBack()"><img class="arrowImgSize" src="images/back28.svg" alt="back button"></button>
+        <button name="forwardArrow" class="buttonStyle arrowRightPosition" onclick="moveImgFwd()"><img class="arrowImgSize" src="images/right127.svg" alt="forward button"></button>
           <div id="carousel">
             <ul id="panes">
               <li>
@@ -38,25 +44,14 @@
               <li>
                 <img src="images/theBean.jpg" alt="The Chicago Bean">
               </li>
-
+            </ul>
           </div>
 
       </section>
-    </header>
-    <main>
-   
-      <article>
-     
-      </article>
-    </section>
-   
-   
+    
     </main>
-    <footer>
-      <nav>
-      </nav>
-    </footer>
-        <script type="text/javascript" src="javascript.js"></script>
+   
+        <script type="text/javascript" src="js/carousel.js"></script>
 
     
 </body>
